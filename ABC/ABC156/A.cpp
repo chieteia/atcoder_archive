@@ -24,4 +24,5 @@ int main()
 
 	if (n >= 10) cout << r << endl;
 	else cout << r + 100 * (10 - n) << endl;
+	return (0);
 }
