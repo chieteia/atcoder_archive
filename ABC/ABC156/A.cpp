@@ -19,9 +19,5 @@ int ri() {
 
 int main()
 {
-	int n = ri();
-	int r = ri();
 
-	if (n >= 10) cout << r << endl;
-	else cout << r + 100 * (10 - n) << endl;
 }
