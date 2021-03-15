@@ -17,5 +17,18 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	string s = rs();
+	int n = s.length();
+	bool is_readable = false;
 
+	rep(i, n)
+	{
+		if (i % 2 == 0){
+			if (isupper(s[i])) is_readable = true;
+		} else {
+			if (islower(s[i])) is_readable = true;
+		}
+	}
+	if (is_readable) cout << "No" << endl;
+	else cout << "Yes" << endl;
 }
