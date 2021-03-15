@@ -31,4 +31,5 @@ int main()
 	}
 	if (ans == 1000000000)	ans = -1;
 	cout << ans << endl;
+	return (0);
 }

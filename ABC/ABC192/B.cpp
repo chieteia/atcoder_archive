@@ -31,4 +31,5 @@ int main()
 	}
 	if (is_readable) cout << "No" << endl;
 	else cout << "Yes" << endl;
+	return (0);
 }

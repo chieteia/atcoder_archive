@@ -27,4 +27,5 @@ int main()
 	rep(i, n) rep(j, n)
 		ans = min(ans, i != j ? max(a[i], b[j]) : a[i] + b[j]);
 	cout << ans;
+	return (0);
 }

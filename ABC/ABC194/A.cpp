@@ -23,4 +23,5 @@ int main()
 	else if(nyuko >= 10 && nyusi >= 3) cout << "2" << endl;
 	else if(nyuko >= 3) cout << "3" << endl;
 	else cout << "4" << endl;
+	return (0);
 }

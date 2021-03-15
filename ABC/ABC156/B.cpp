@@ -30,4 +30,5 @@ int main()
 		ans++;
 		n /= k;
 	}
+	return (0);
 }

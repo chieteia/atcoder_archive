@@ -28,4 +28,5 @@ int main()
 	else if ((a && b) || (b && c)) cout << 2 << endl;
 	else if (a || b || c) cout << 1 << endl;
 	else cout << 0 << endl;
+	return (0);
 }

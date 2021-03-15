@@ -17,5 +17,19 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int n = ri();
+	int x = ri();
+	vector<int> a(n);
+	bool start = true;
 
+	rep(i, n)
+	{
+		a[i] = ri();
+		if (a[i] == x) continue;
+		if (start) start = false;
+		else cout << " ";
+		cout << a[i];
+	}
+	cout << endl;
+	return (0);
 }
