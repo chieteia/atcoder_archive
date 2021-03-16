@@ -22,7 +22,7 @@ int main()
 
 	int ans = t.size();
 
-	rep(i, s.size() - t.size())
+	rep(i, s.size() - t.size() + 1)
 	{
 		int diff = 0;
 		rep(j, t.size())
