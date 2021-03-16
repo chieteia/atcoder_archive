@@ -17,5 +17,17 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	string s = rs();
+	string t = rs();
 
+	int ans = t.size();
+
+	rep(i, s.size() - t.size())
+	{
+		int diff = 0;
+		rep(j, t.size())
+			if (s[i + j] != t[j]) diff++;
+		ans = min(ans, diff);
+	}
+	cout << ans << endl;
 }
