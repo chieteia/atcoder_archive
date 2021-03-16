@@ -17,5 +17,9 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int d, t, s;
+	cin >> d >> t >> s;
 
+	if (t * s >= d) cout << "Yes" << endl;
+	else cout << "No" << endl;
 }
