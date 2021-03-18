@@ -17,5 +17,17 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
-
+	int n, s, d;
+	cin >> n >> s >> d;
+	rep(i, n)
+	{
+		int x, y;
+		cin >> x >> y;
+		if (x < s && y > d)
+		{
+			cout << "Yes" << endl;
+			return (0);
+		}
+	}
+	cout << "No" << endl;
 }

@@ -13,9 +13,11 @@ using P = pair<int, int>;
 const ll INF = 1LL << 60;
 
 inline int ri() {int n;cin >> n;return n;}
+inline bool rb() {bool n;cin >> n;return n;}
 inline string rs() {string s;cin >> s;return s;}
 
-int main()
-{
-
+int main(){
+    int a, b, c;
+    cin >> a >> b >> c;
+    cout << (a + c > b ? "Takahashi" : "Aoki") << endl;
 }
