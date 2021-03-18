@@ -17,5 +17,20 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int n, x;
+	cin >> n >> x;
 
+	int sum = 0;
+	rep(i, n)
+	{
+		int v, p;
+		cin >> v >> p;
+		sum += v * p;
+		if (sum > x * 100)
+		{
+			cout << i + 1 << endl;
+			return (0);
+		}
+	}
+	cout << -1 << endl;
 }
