@@ -17,5 +17,9 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int x = ri();
+	int y = ri();
 
+	if ((x + 3 > y) && (y + 3 > x)) cout << "Yes" << endl;
+	else cout << "No" << endl;
 }

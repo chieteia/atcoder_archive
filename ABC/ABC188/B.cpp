@@ -17,5 +17,16 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int n = ri();
+	vector<int> a(n);
+	vector<int> b(n);
 
+	rep(i, n) cin >> a[i];
+	rep(j, n) cin >> b[j];
+
+	int sum = 0;
+	rep(i, n)
+		sum += (a[i] * b[i]);
+	if (sum != 0) cout << "No" << endl;
+	else cout << "Yes" << endl;
 }
