@@ -17,5 +17,7 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
-
+	int n = ri();
+	int w = ri();
+	cout << n / w << endl;
 }
