@@ -17,5 +17,27 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int h = ri();
+	int w = ri();
+	vector<vector<int>> data(h, vector<int>(w));
 
+	int Min = 1000;
+	rep(i, h)
+	{
+		rep(j, w)
+		{
+			data[i][j] = ri();
+			Min = min(Min, data[i][j]);
+		}
+	}
+
+	int ans = 0;
+	rep(i, h)
+	{
+		rep(j, w)
+		{
+			ans += (data[i][j] - Min);
+		}
+	}
+	cout << ans << endl;
 }
