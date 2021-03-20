@@ -17,5 +17,23 @@ inline string rs() {string s;cin >> s;return s;}
 
 int main()
 {
+	int n = ri();
+	vector<P> pos(n);
+	rep(i,n)
+	{
+		pos[i].first = ri();
+		pos[i].second = ri();
+	}
 
+	int cnt = 0;
+	for(int i = 0; i < n; i++)
+	{
+		for(int j = i + 1; j < n; j++)
+		{
+			auto [x1, y1] = pos[i];
+			auto [x2, y2] = pos[j];
+			if (abs(y1 - y2) <= abs(x1 - x2)) cnt++;
+		}
+	}
+	cout << cnt << endl;
 }

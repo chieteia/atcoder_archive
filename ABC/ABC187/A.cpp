@@ -15,7 +15,14 @@ const ll INF = 1LL << 60;
 inline int ri() {int n;cin >> n;return n;}
 inline string rs() {string s;cin >> s;return s;}
 
+int S(string n)
+{
+	return((n[0] - '0') + (n[1] - '0') + (n[2] - '0'));
+}
+
 int main()
 {
-
+	string a = rs();
+	string b = rs();
+	cout << max(S(a), S(b)) << endl;
 }
